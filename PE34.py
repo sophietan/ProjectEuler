@@ -8,7 +8,7 @@ def fact_digit():
     f = {str(x): fac(x) for x in range(10)}
     result = []
 
-    for n in range(50000):
+    for n in range(10, 50000):
         n_sum = sum(f[digit] for digit in str(n))
         if n_sum == n:
             result.append(n)
